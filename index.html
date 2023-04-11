@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorteador Random</title>
+    <link rel="shortcut icon" href="img/MicrosoftTeams-image-removebg-preview.png" type="image/x-icon">
+    <link rel="stylesheet" href="sytles.css">
+</head>
+
+<body>
+
+    <div id="main">
+        <div id="form">
+            <h1>SORTEADOR</h1>
+            <label for="choice"></label><br>
+
+            <!--Recuadro para introducir la opción-->
+            <input type="text" id="choice" name="choice" placeholder="Introduces las Actividades">&nbsp;&nbsp;<help><button id="help"
+                    onclick="show_help()">?</button></help>
+            <br>
+            <br><button type="button" class="btn" onclick="add_choice()">Añadir</button>
+
+
+            </form>
+            <div id="actividades">
+                <h2>Lista de opciones</h2>
+                <div>
+                    <p id="contenido_actividades"></p>
+
+                </div>
+
+
+            </div>
+            <br><a id="btnGo" href="resultado.html"><button class="btn" type="button" onclick="return sortear()">Comenzar</button></a>
+        </div>
+
+        <script src="./sorteador.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,73 @@
+body {
+    height: auto;
+    text-align: center;
+    background-color: turquoise;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#main {
+    width: 80%;
+    height: auto;
+    background-color: turquoise;
+    margin: auto;
+    margin-top:50px;
+    padding: 15px;
+}
+
+/*Container*/
+#form {
+    width: 70%;
+    margin: auto;
+    padding: 5px;
+}
+
+/*Recuadro donde se escribe la opción*/
+input {
+    padding: 15px;
+    width: 50%;
+    border-radius: 15px;
+    border: white;
+}
+
+/*Botón help*/
+#help {
+    height: 40px;
+    width: 40px;
+    background-color: #232D4B;
+    border: green;
+    border-radius: 50%;
+    color: white;
+}
+
+/*Recuadro donde se muestra la lista*/
+#contenido_actividades{
+    height: 300px;
+    width: 70%;
+    margin: auto;
+    border-radius: 45px;
+    background-color: white;
+    color: black;
+}
+
+/*Recuadro del resultado*/
+.btn {
+    height: 40px;
+    width: 500px;
+    border: white;
+    border-radius: 10px;
+    background-color: #232D4B;
+    color: white;
+}
+
+/*Recuadro del resultado*/
+#resultadoDiv {
+    color: black;
+    background-color: white;
+    height: 150px;
+    font-size: 50px;
+    justify-content: center;
+    align-items: center;
+    display:flex ;
+    border-radius: 45px;
+}
