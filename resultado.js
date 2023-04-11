@@ -1,9 +1,10 @@
 mostrarResultado();
-
+//Función para mostrar el resultado
 function mostrarResultado() {
     document.getElementById("resultadoDiv").innerHTML = `<h1>${window.localStorage.getItem("result")}</h1>`
 }
 
+//Función para volven a elegir otra opción de la lista de opciones anterior
 function anotherOption() {
     let choices = window.localStorage.getItem("choices");
     choices = choices.split(",");
@@ -12,6 +13,7 @@ function anotherOption() {
     mostrarResultado();
 }
 
+//Función para volver a crear otra lista de opciones
 function reset() {
     window.localStorage.clear();
 }
