@@ -57,7 +57,7 @@ function show_choices(val) {
 //Función para seleccionar una opción aleatoriamente
 function sortear(){
   var rand = Math.round(Math.random() * (choices.length-1));
-  if (rand == -1) {
+  if (choices.length == 0) {
     alert("Debes introducir opciones antes de sortear!")
     return false;
   } else {
