@@ -1,6 +1,6 @@
-mostrarResultado();
+printWinner();
 //Función para mostrar el resultado
-function mostrarResultado() {
+function printWinner() {
     document.getElementById("resultadoDiv").innerHTML = `<h1>${window.localStorage.getItem("result")}</h1>`
 }
 
@@ -10,7 +10,7 @@ function anotherOption() {
     choices = choices.split(",");
     var rand = Math.round(Math.random() * (choices.length - 1));
     window.localStorage.setItem("result", choices[rand]);
-    mostrarResultado();
+    printWinner();
 }
 
 //Función para volver a crear otra lista de opciones
