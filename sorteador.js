@@ -55,13 +55,13 @@ function show_choices(val) {
 }
 
 //Función para seleccionar una opción aleatoriamente
-function sortear(){
-  var rand = Math.round(Math.random() * (choices.length-1));
+document.getElementById("btnGo").addEventListener("click", e => {
   if (choices.length == 0) {
-    alert("Debes introducir opciones antes de sortear!")
-    return false;
+    alert("Debes introducir opciones antes de sortear!");
+    e.preventDefault();
   } else {
+    var rand = Math.round(Math.random() * (choices.length-1));
     window.localStorage.setItem("result", choices[rand]);
     window.localStorage.setItem("choices", choices);
   }
-}
+});
